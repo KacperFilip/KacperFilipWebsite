@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html{
+    height: 100%;
+    background: url('../computerjpg.png')
+    
+}
+
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+div{
+    transition: all .5s ease-in-out;
+}
+
+div a{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #777;
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+}
+
+.project:hover{
+    background-position: -1200px;
+    cursor: pointer;
+}
+
+.project2:hover{
+    background-position: -1000px;
+    cursor: pointer;
+}
+
+div p {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #333;
+    margin: 5rem auto;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 3rem auto;
+    font-size: 60px;
+    color: white;
+}
+
+.project{
+    position: relative;
+    width: 30%;
+    height: 10rem;
+    margin: 2rem auto;
+    background: url('../computer.png');
+    background-position: -800px;
+    border-radius: 2rem;
+}
+
+.project2{
+    position: relative;
+    width: 30%;
+    height: 10rem;
+    margin: 4rem auto;
+    background: url('../computer.png');
+    background-position: -1300px;
+    border-radius: 2rem;
+}
+
+.project:hover, .project2:hover{
+    border-radius: 5rem;
+}
+
+@media screen and (max-width: 1080px){
+    .project, .project2{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .project, .project2{
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,90 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( 45deg, green, #38b3c4);
+    background: -moz-linear-gradient( 45deg, green, #38b3c4);
+    background: -ms-linear-gradient( 45deg, green, #38b3c4);
+    background: -o-linear-gradient( 45deg, green, #38b3c4);
+    background: linear-gradient( 45deg, green, #38b3c4);
+}
+
+body{
+    color: white;
+    text-align: center;
+}
+
+.strength-meter{
+    position: relative;
+    height: 3rem;
+    width: 90%;
+    border: 5px solid green;
+    border-radius: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.strength-meter::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: calc(1% * var(--strength, 0));
+    background: rgb(38, 173, 56);
+
+    transition: width 200ms ease-in-out;
+}
+
+#passwordpc{
+    position: absolute;
+    left: 50%;
+    top: 4rem;
+    transform: translateX(-50%);
+    font-size: 1.75rem;
+}
+
+
+.password-input{
+    margin-top: 1.3rem;
+    width: 30%;
+    padding: .55rem .75rem .1rem .75rem;
+    background: #58be39;
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid green;
+    outline: none;
+    transition: all 200ms ease-in-out;
+    border-radius: .3rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.password-input:focus{
+    width: 40%;
+    border-bottom: 4px solid green;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    border-radius: .7rem;
+}
+
+.password-input::placeholder{
+    transition: all 200ms ease-in-out;
+}
+
+.password-input:focus::placeholder{
+    color: transparent;
+}
+
+.reasons > *{
+    margin-top: .5rem;
+    color: white;
+}

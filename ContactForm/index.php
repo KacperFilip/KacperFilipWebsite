@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Contact Me</title>
+</head>
+<body>
+    <main>
+        
+        <img src='../computerjpg.png' alt="aa">
+
+        <form  autocomplete="off" class="contact-form" action="contactform.php" method="post">
+            <p>SEND ME AN E-MAIL</p>
+            <input autocapitalize="words" required id="name"  type="text" name="name" placeholder="Full Name"><br>
+            <input required  id="email" type="email" name="mail" placeholder="Your E-mail"><br>
+            <input required  id="subject" type="text" name="subject" placeholder="Subject"><br>
+            <textarea required  name="message" id="txtarea" cols="35" rows="6" placeholder="Message"></textarea><br>
+            <button type="submit" name="submit">Send E-mail</button><br>
+        </form>
+    </main>
+</body>
+</html>

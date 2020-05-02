@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 1;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 65px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    border: 8px solid white;
+    padding: 40px;
+    background: #333;
+    opacity: .5;
+}
+
+header h1 p{
+    font-size: 40px;
+    text-align: center;
+}
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url('../computer.png');
+    background-position: -1200px;
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+
+div p {
+    text-align: center;
+}
+
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: #333;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container div p {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container div p a {
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    top: -10vh;
+}
+
+#navbar {
+    color: white;
+    transition: all .5s ease-in-out;
+    position: sticky;
+    width: 15%;
+    height: 60px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    font-family: 'Libre Franklin', sans-serif;
+    z-index: 3;
+    box-shadow: 0 0 10px 1px #555;
+}
+
+#menutxt {
+    transition: all .2s ease-in-out;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+#menutxt::selection {
+    background: none;
+}
+
+#menutxt:hover {
+    cursor: pointer;
+}
+
+#navlist {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    transition: all .5s ease-in-out;
+    top: -100%;
+}
+
+.navli {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 33.3%;
+    text-align: center;
+    flex: 1;
+    transition: all .2s ease-in-out;
+    padding-top: 1rem;
+}
+
+.navli:hover {
+    background: #555;
+}
+
+.nava:hover {
+    cursor: pointer;
+}
+
+a{
+    color: white;
+}
+
+.nava {
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#hidemenu {
+    transition: all .5s ease-in-out;
+
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translateX(-50%);
+    background: #333;
+    text-align: center;
+    font-size: 25px;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    box-shadow: 0 4px 5px 1px #444;
+}
+
+#projects{
+    height: 30vh;
+    text-shadow: 3px 3px black;
+    border-radius: 3rem;
+    backdrop-filter: blur(6px);
+    position: absolute;
+    width: 95vw;
+    overflow: hidden;
+    margin-top: 5vh;
+}
+
+
+#contact{
+    
+    height: 30vh;
+    text-shadow: 3px 3px black;
+    padding: 2rem auto;
+    border-radius: 3rem;
+    overflow: hidden;
+    margin: 50vh auto 0 auto;
+    position: absolute;
+    width: 95vw;
+    backdrop-filter: blur(6px);
+}
+
+.backgroundfilter{
+    overflow: hidden;
+    width: 120vw;
+    height: 100vh;
+    background: #333;
+    left: -12vw;
+    border-radius: 2rem;
+    position: absolute;
+    top: -10vh;
+    background: url('../computerjpg.png');
+    z-index: -1;
+    filter: blur(8px);
+}
+
+.divh2{
+    height: 4rem;
+    padding-top: 2rem;
+    font-size: 45px;
+    text-align: center;
+}
+
+#hidemenu:hover {
+    cursor: pointer;
+    background: none;
+    color: #777;
+    text-shadow: 0 0 2px #333;
+    box-shadow: none;
+}
+
+.contdiv{
+    margin-top: 80px;
+}
+
+.abouthr{
+    margin: 18px auto;
+    transition: all .8s ease-in-out;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border: none;
+}
+
+.contdiv:hover .abouthr{
+    width: 10%;
+}
+
+.contdiv p{
+    font-size: 25px;
+}
+
+#ftr{
+    width: 100%;
+    height: 60px;
+    background: red;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    z-index: 5;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      border: 1px solid white;
+    background: #333; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    border-radius: 15px;
+  }
+
+
+
+@media screen and (max-width: 1515px) {
+    #navbar {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1182px) {
+    #navbar {
+        width: 70%;
+    }
+
+    .navli {
+        padding: 20px 15% 20px 8%;
+    }
+}
+
+@media screen and (max-width: 836px) {
+    .navli {
+        padding: 20px 15% 20px 5%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .navli {
+        font-size: 13px;
+        padding: 20px 15% 20px 3%;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    header::before {
+        background-position: 100px;
+    }
+}
