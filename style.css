@@ -69,7 +69,7 @@ header::before {
     right: 0;
     bottom: 0;
     display: block;
-    background: url('../computer.png');
+    background: url('./computer.png');
     background-position: -1200px;
     background-size: cover;
     transform-origin: center center 0;
@@ -239,7 +239,7 @@ a{
     border-radius: 2rem;
     position: absolute;
     top: -10vh;
-    background: url('../computerjpg.png');
+    background: url('./computerjpg.png');
     z-index: -1;
     filter: blur(8px);
 }
